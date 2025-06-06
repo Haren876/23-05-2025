@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image in Marquee</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .marquee-container {
+      margin-top: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .marquee-images {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+
+    .marquee-images img {
+      height: 200px;
+      margin-right: 20px;
+      border: 1px solid #ccc;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Image in Marquee</h2>
+  <p>
+    On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document.
+    You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks.
+    When you create pictures, charts, or diagrams, they also coordinate with your current document look...
+  </p>
+
+  <div class="marquee-container">
+    <div class="marquee-images">
+      <img src="https://img.freepik.com/free-vector/education-concept_52683-29492.jpg" alt="Books 1">
+      <img src="https://img.freepik.com/free-vector/education-concept_52683-29492.jpg" alt="Books 2">
+    </div>
+  </div>
+
+</body>
+</html>
